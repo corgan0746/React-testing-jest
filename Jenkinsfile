@@ -17,7 +17,7 @@ pipeline {
 
         stage('Front-end Unit Test') {
           steps {
-            sh 'npm audit fix --force'
+            sh 'npm install && npm run test -a'
           }
         }
 
