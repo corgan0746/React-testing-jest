@@ -40,5 +40,11 @@ pipeline {
       }
     }
 
+    stage('Push docker image') {
+      steps {
+        sh 'docker push corgan0746/react-app:latest'
+      }
+    }
+
   }
 }
